@@ -1,0 +1,16 @@
+# .air.toml configuration file
+
+# Configurations for air
+[build]
+cmd = "go build -o ./bin/main ./cmd/main.go"
+bin = "./bin/main"
+full_bin = "APP_ENV=dev ./bin/main"
+watch_dir = ["."]
+exclude_dir = ["vendor", "bin"]
+include_ext = ["go", "tpl", "tmpl", "html"]
+exclude_file = []
+delay = 1000
+stop_on_error = true
+
+[log]
+level = "debug"
